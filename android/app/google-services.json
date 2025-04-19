@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "174607301798",
+    "firebase_url": "https://umaskitchen-3ae61-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "umaskitchen-3ae61",
+    "storage_bucket": "umaskitchen-3ae61.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174607301798:android:d2a48b13948b0590134867",
+        "android_client_info": {
+          "package_name": "com.umaskitchen.umaskitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174607301798-tarp5uagp51vicamheooenn2eb066ue3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umaskitchen.umaskitchen",
+            "certificate_hash": "3d212cddbb5c5005854f13890efdc8cbc48340d9"
+          }
+        },
+        {
+          "client_id": "174607301798-mcq9m6n818r8d61mhknc41hpl1an7g6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGael3eaM1j0dYw0ekVsdjS0x0fp1Y0I4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174607301798-mcq9m6n818r8d61mhknc41hpl1an7g6j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "174607301798-h6875nbu7hdki2hqt34u3b70qdu24jpk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.umaskitchen.umaskitchen"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

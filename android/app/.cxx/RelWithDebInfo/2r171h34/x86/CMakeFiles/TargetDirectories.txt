@@ -1,0 +1,2 @@
+D:/foodie2/Foodie-Apps-8.2/foodie-8.2/customer/android/app/.cxx/RelWithDebInfo/2r171h34/x86/CMakeFiles/edit_cache.dir
+D:/foodie2/Foodie-Apps-8.2/foodie-8.2/customer/android/app/.cxx/RelWithDebInfo/2r171h34/x86/CMakeFiles/rebuild_cache.dir
