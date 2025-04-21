@@ -696,7 +696,7 @@ class FireStoreUtils {
   }
 
   static Future<List<ProductModel>> getProductByVendorId(String vendorId) async {
-    String selectedFoodType = Preferences.getString(Preferences.foodDeliveryType, defaultValue: "Delivery".tr);
+    String selectedFoodType = Preferences.getString(Preferences.foodDeliveryType, defaultValue: "TakeAway".tr);
     List<ProductModel> list = [];
     if (selectedFoodType == "TakeAway") {
       await fireStore

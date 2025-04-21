@@ -9,6 +9,7 @@ import 'package:customer/models/vendor_category_model.dart';
 import 'package:customer/models/vendor_model.dart';
 import 'package:customer/services/cart_provider.dart';
 import 'package:customer/utils/fire_store_utils.dart';
+import 'package:customer/utils/preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -30,7 +31,7 @@ class HomeController extends GetxController {
   RxBool isLoading = true.obs;
   RxBool isListView = true.obs;
   RxBool isPopular = true.obs;
-  RxString selectedOrderTypeValue = "Delivery".tr.obs;
+  RxString selectedOrderTypeValue = "TakeAway".tr.obs;
 
   Rx<PageController> pageController = PageController(viewportFraction: 0.877).obs;
   Rx<PageController> pageBottomController = PageController(viewportFraction: 0.877).obs;
@@ -64,7 +65,7 @@ class HomeController extends GetxController {
   getData() async {
     isLoading.value = true;
     getCartData();
-    // selectedOrderTypeValue.value = Preferences.getString(Preferences.foodDeliveryType, defaultValue: "Delivery".tr).tr;
+    selectedOrderTypeValue.value = Preferences.getString(Preferences.foodDeliveryType, defaultValue: "TakeAway".tr).tr;
     await getZone();
     FireStoreUtils.getAllNearestRestaurant().listen((event) async {
       popularRestaurantList.clear();

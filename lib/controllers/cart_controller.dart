@@ -113,7 +113,7 @@ class CartController extends GetxController {
         calculatePrice();
       },
     );
-    selectedFoodType.value = Preferences.getString(Preferences.foodDeliveryType, defaultValue: "Delivery".tr);
+    selectedFoodType.value = Preferences.getString(Preferences.foodDeliveryType, defaultValue: "TakeAway".tr);
 
     await FireStoreUtils.getUserProfile(FireStoreUtils.getCurrentUid()).then(
       (value) {
