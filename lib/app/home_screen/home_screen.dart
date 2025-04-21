@@ -353,7 +353,7 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ),
                                         const SizedBox(
-                                          height: 5,
+                                          height: 0,
                                         ),
                                       ],
                                     ),
@@ -364,6 +364,8 @@ class HomeScreen extends StatelessWidget {
                                         mainAxisAlignment: MainAxisAlignment.start,
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
+                                          // TEMPORARILY DISABLED: Story section - Uncomment when needed
+                                          /* Original Story section:
                                           controller.storyList.isEmpty || Constant.storyEnable == false
                                               ? const SizedBox()
                                               : Padding(
@@ -373,6 +375,9 @@ class HomeScreen extends StatelessWidget {
                                           SizedBox(
                                             height: controller.storyList.isEmpty ? 0 : 20,
                                           ),
+                                          */
+                                          // TEMPORARILY DISABLED: Categories section - Uncomment when needed
+                                          /* Original Categories section:
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 16),
                                             child: Column(
@@ -389,15 +394,19 @@ class HomeScreen extends StatelessWidget {
                                               ],
                                             ),
                                           ),
+                                          */
                                           const SizedBox(
-                                            height: 32,
+                                            height: 0,
                                           ),
+                                          // TEMPORARILY DISABLED: Banner section - Uncomment when needed
+                                          /* Original Banner section:
                                           controller.bannerModel.isEmpty
                                               ? const SizedBox()
                                               : Padding(
                                                   padding: const EdgeInsets.symmetric(horizontal: 16),
                                                   child: BannerView(controller: controller),
                                                 ),
+                                          */
                                           controller.couponRestaurantList.isEmpty
                                               ? const SizedBox()
                                               : Padding(
@@ -421,7 +430,7 @@ class HomeScreen extends StatelessWidget {
                                                   ),
                                                 ),
                                           const SizedBox(
-                                            height: 28,
+                                            height: 0,
                                           ),
                                           controller.newArrivalRestaurantList.isEmpty
                                               ? const SizedBox()
@@ -568,14 +577,7 @@ class HomeScreen extends StatelessWidget {
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
                                             child: controller.isPopular.value ? PopularRestaurant(controller: controller) : AllRestaurant(controller: controller),
-                                          )
-                                          // controller.isPopular.value
-                                          //     ? PopularRestaurant(
-                                          //   controller: controller,
-                                          // )
-                                          //     : PopularRestaurant(
-                                          //   controller: controller,
-                                          // ),
+                                          ),
                                         ],
                                       ),
                                     ),

@@ -70,7 +70,7 @@ class Constant {
   static String minimumAmountToWithdrawal = "0.0";
   static String? referralAmount = "0.0";
   static bool? walletSetting = true;
-  static bool? storyEnable = true;
+  static bool? storyEnable = false;
   static bool? specialDiscountOffer = true;
 
   static const String orderPlaced = "Order Placed";

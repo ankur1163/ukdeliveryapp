@@ -160,11 +160,11 @@ class DineInScreen extends StatelessWidget {
                                       Get.to(const ViewAllCategoryDineInScreen());
                                     }),
                                     const SizedBox(
-                                      height: 10,
+                                      height: 28,
                                     ),
                                     CategoryView(controller: controller),
                                     const SizedBox(
-                                      height: 28,
+                                      height: 10,
                                     ),
                                   ],
                                 ),
