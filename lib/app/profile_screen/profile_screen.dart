@@ -95,7 +95,7 @@ class ProfileScreen extends StatelessWidget {
                                         : cardDecoration(themeChange, controller, "assets/images/ic_profile.svg", "Profile Information".tr, () {
                                             Get.to(const EditProfileScreen());
                                           }),
-                                    if (Constant.isEnabledForCustomer == true)
+                                    if (Constant.isEnabledForCustomer == true && false)
                                       cardDecoration(themeChange, controller, "assets/images/ic_dinin.svg", "Dine-In".tr, () {
                                         Get.to(const DineInScreen());
                                       }),
@@ -109,7 +109,7 @@ class ProfileScreen extends StatelessWidget {
                             const SizedBox(
                               height: 20,
                             ),
-                            Constant.isEnabledForCustomer == true
+                            (Constant.isEnabledForCustomer == true && false)
                                 ? Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -210,7 +210,7 @@ class ProfileScreen extends StatelessWidget {
                                           }),
                                     cardDecoration(themeChange, controller, "assets/icons/ic_share.svg", "Share app", () {
                                       Share.share(
-                                          'Check out Foodie, your ultimate food delivery application! \n\nGoogle Play: ${Constant.googlePlayLink} \n\nApp Store: ${Constant.appStoreLink}',
+                                          'Check out Uma\'s Kitchen, your ultimate food delivery application! \n\nGoogle Play: ${Constant.googlePlayLink} \n\nApp Store: ${Constant.appStoreLink}',
                                           subject: 'Look what I made!');
                                     }),
                                     cardDecoration(themeChange, controller, "assets/icons/ic_rate.svg", "Rate the app", () {
